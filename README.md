@@ -8,12 +8,12 @@ Each guess is logged on the GameScreen with its number (order) and once the phon
 
 ### Start Game Screen:
 
-![StartScreen](/assets/images/StartScreen.jpg)
+<img src="/assets/images/StartScreen.jpg" alt="Start game screen" width="200" height="350">
 
 ### Game Screen:
 
-![GameScreen](/assets/images/GameScreen.jpg)
+<img src="/assets/images/GameScreen.jpg"  alt="Game screen" width="200" height="350">
 
 ### End Game Screen:
 
-![EndGameScreen](/assets/images/EndGameScreen.jpg)
+<img src="/assets/images/EndGameScreen.jpg"  alt="End game screen" width="200" height="350">
