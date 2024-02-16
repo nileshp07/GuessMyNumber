@@ -1,9 +1,9 @@
 {
 	"expo": {
-		"slug": "GuessMyNumberApp",
+		"slug": "guessmynumber",
 		"name": "GuessMyNumberApp",
 		"version": "1.0.0",
-		"orientation": "portrait",
+		"orientation": "default",
 		"icon": "./assets/icon.png",
 		"splash": {
 			"image": "./assets/splash.png",
@@ -11,20 +11,32 @@
 			"backgroundColor": "#ffffff"
 		},
 		"updates": {
-			"fallbackToCacheTimeout": 0
+			"fallbackToCacheTimeout": 0,
+			"url": "https://u.expo.dev/19a81658-9218-42ce-8575-6ef8b652f398"
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"supportsTablet": true
+			"supportsTablet": true,
+			"bundleIdentifier": "com.nileshparmar.guessmynumber"
 		},
 		"android": {
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
-			}
+			},
+			"package": "com.nileshparmar.guessmynumber"
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
+		},
+		"extra": {
+			"eas": {
+				"projectId": "19a81658-9218-42ce-8575-6ef8b652f398"
+			}
+		},
+		"owner": "nileshparmar",
+		"runtimeVersion": {
+			"policy": "appVersion"
 		}
 	}
 }

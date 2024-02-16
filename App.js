@@ -9,6 +9,7 @@ import StartGameScreen from './screens/StartGameScreen';
 import GameScreen from './screens/GameScreen';
 import EndGameScreen from './screens/EndGameScreen';
 import Colors from './constants/colors';
+import {StatusBar} from 'expo-status-bar';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -63,20 +64,23 @@ export default function App() {
 		);
 
 	return (
-		<LinearGradient
-			colors={[Colors.primary600, Colors.accent500]}
-			style={styles.rootScreen}
-			onLayout={onLayoutRootView}
-		>
-			<ImageBackground
-				source={require('./assets/images/background.jpg')}
-				resizeMode='cover'
+		<>
+			<StatusBar style='light' />
+			<LinearGradient
+				colors={[Colors.primary600, Colors.accent500]}
 				style={styles.rootScreen}
-				imageStyle={styles.backgroundImage}
+				onLayout={onLayoutRootView}
 			>
-				<SafeAreaView style={styles.rootScreen}>{screen}</SafeAreaView>
-			</ImageBackground>
-		</LinearGradient>
+				<ImageBackground
+					source={require('./assets/images/background.jpg')}
+					resizeMode='cover'
+					style={styles.rootScreen}
+					imageStyle={styles.backgroundImage}
+				>
+					<SafeAreaView style={styles.rootScreen}>{screen}</SafeAreaView>
+				</ImageBackground>
+			</LinearGradient>
+		</>
 	);
 }
 
